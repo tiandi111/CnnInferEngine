@@ -1,0 +1,5 @@
+cmake-build-debug
+*.out
+onnx.proto
+*tmp
+*log
