@@ -3,3 +3,4 @@ cmake-build-debug
 onnx.proto
 *tmp
 *log
+./idea
