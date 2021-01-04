@@ -72,8 +72,6 @@ class SparseTensorProtoDefaultTypeInternal {
 class TensorShapeProto_DimensionDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TensorShapeProto_Dimension> _instance;
-  ::PROTOBUF_NAMESPACE_ID::int64 dim_value_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr dim_param_;
 } _TensorShapeProto_Dimension_default_instance_;
 class TensorShapeProtoDefaultTypeInternal {
  public:
@@ -94,9 +92,6 @@ class TypeProto_MapDefaultTypeInternal {
 class TypeProtoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TypeProto> _instance;
-  const ::onnx::TypeProto_Tensor* tensor_type_;
-  const ::onnx::TypeProto_Sequence* sequence_type_;
-  const ::onnx::TypeProto_Map* map_type_;
 } _TypeProto_default_instance_;
 class OperatorSetIdProtoDefaultTypeInternal {
  public:
@@ -121,9 +116,6 @@ static void InitDefaultsscc_info_AttributeProto_onnx_2eproto() {
     new (ptr) ::onnx::GraphProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::AttributeProto::InitAsDefaultInstance();
-  ::onnx::NodeProto::InitAsDefaultInstance();
-  ::onnx::GraphProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_AttributeProto_onnx_2eproto =
@@ -141,7 +133,6 @@ static void InitDefaultsscc_info_ModelProto_onnx_2eproto() {
     new (ptr) ::onnx::ModelProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::ModelProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_ModelProto_onnx_2eproto =
@@ -159,7 +150,6 @@ static void InitDefaultsscc_info_OperatorSetIdProto_onnx_2eproto() {
     new (ptr) ::onnx::OperatorSetIdProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::OperatorSetIdProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OperatorSetIdProto_onnx_2eproto =
@@ -173,7 +163,6 @@ static void InitDefaultsscc_info_SparseTensorProto_onnx_2eproto() {
     new (ptr) ::onnx::SparseTensorProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::SparseTensorProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SparseTensorProto_onnx_2eproto =
@@ -188,7 +177,6 @@ static void InitDefaultsscc_info_StringStringEntryProto_onnx_2eproto() {
     new (ptr) ::onnx::StringStringEntryProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::StringStringEntryProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_StringStringEntryProto_onnx_2eproto =
@@ -202,7 +190,6 @@ static void InitDefaultsscc_info_TensorAnnotation_onnx_2eproto() {
     new (ptr) ::onnx::TensorAnnotation();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TensorAnnotation::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TensorAnnotation_onnx_2eproto =
@@ -217,7 +204,6 @@ static void InitDefaultsscc_info_TensorProto_onnx_2eproto() {
     new (ptr) ::onnx::TensorProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TensorProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TensorProto_onnx_2eproto =
@@ -233,7 +219,6 @@ static void InitDefaultsscc_info_TensorProto_Segment_onnx_2eproto() {
     new (ptr) ::onnx::TensorProto_Segment();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TensorProto_Segment::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TensorProto_Segment_onnx_2eproto =
@@ -247,7 +232,6 @@ static void InitDefaultsscc_info_TensorShapeProto_onnx_2eproto() {
     new (ptr) ::onnx::TensorShapeProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TensorShapeProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TensorShapeProto_onnx_2eproto =
@@ -262,7 +246,6 @@ static void InitDefaultsscc_info_TensorShapeProto_Dimension_onnx_2eproto() {
     new (ptr) ::onnx::TensorShapeProto_Dimension();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TensorShapeProto_Dimension::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TensorShapeProto_Dimension_onnx_2eproto =
@@ -276,7 +259,6 @@ static void InitDefaultsscc_info_TrainingInfoProto_onnx_2eproto() {
     new (ptr) ::onnx::TrainingInfoProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TrainingInfoProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TrainingInfoProto_onnx_2eproto =
@@ -302,9 +284,6 @@ static void InitDefaultsscc_info_TypeProto_onnx_2eproto() {
     new (ptr) ::onnx::TypeProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TypeProto_Sequence::InitAsDefaultInstance();
-  ::onnx::TypeProto_Map::InitAsDefaultInstance();
-  ::onnx::TypeProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TypeProto_onnx_2eproto =
@@ -319,7 +298,6 @@ static void InitDefaultsscc_info_TypeProto_Tensor_onnx_2eproto() {
     new (ptr) ::onnx::TypeProto_Tensor();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::TypeProto_Tensor::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TypeProto_Tensor_onnx_2eproto =
@@ -334,7 +312,6 @@ static void InitDefaultsscc_info_ValueInfoProto_onnx_2eproto() {
     new (ptr) ::onnx::ValueInfoProto();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::onnx::ValueInfoProto::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ValueInfoProto_onnx_2eproto =
@@ -724,14 +701,6 @@ bool Version_Parse(
 
 // ===================================================================
 
-void AttributeProto::InitAsDefaultInstance() {
-  ::onnx::_AttributeProto_default_instance_._instance.get_mutable()->t_ = const_cast< ::onnx::TensorProto*>(
-      ::onnx::TensorProto::internal_default_instance());
-  ::onnx::_AttributeProto_default_instance_._instance.get_mutable()->g_ = const_cast< ::onnx::GraphProto*>(
-      ::onnx::GraphProto::internal_default_instance());
-  ::onnx::_AttributeProto_default_instance_._instance.get_mutable()->sparse_tensor_ = const_cast< ::onnx::SparseTensorProto*>(
-      ::onnx::SparseTensorProto::internal_default_instance());
-}
 class AttributeProto::_Internal {
  public:
   using HasBits = decltype(std::declval<AttributeProto>()._has_bits_);
@@ -806,22 +775,22 @@ AttributeProto::AttributeProto(const AttributeProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_name()) {
-    name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArena());
   }
   s_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_s()) {
-    s_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_s(),
+    s_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_s(), 
       GetArena());
   }
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_doc_string()) {
-    doc_string_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_doc_string(),
+    doc_string_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_doc_string(), 
       GetArena());
   }
   ref_attr_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_ref_attr_name()) {
-    ref_attr_name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_ref_attr_name(),
+    ref_attr_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_ref_attr_name(), 
       GetArena());
   }
   if (from._internal_has_t()) {
@@ -851,8 +820,9 @@ void AttributeProto::SharedCtor() {
   s_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ref_attr_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&t_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&type_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&t_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&type_) -
       reinterpret_cast<char*>(&t_)) + sizeof(type_));
 }
 
@@ -940,7 +910,6 @@ void AttributeProto::Clear() {
 const char* AttributeProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1486,10 +1455,6 @@ std::string AttributeProto::GetTypeName() const {
 
 // ===================================================================
 
-void ValueInfoProto::InitAsDefaultInstance() {
-  ::onnx::_ValueInfoProto_default_instance_._instance.get_mutable()->type_ = const_cast< ::onnx::TypeProto*>(
-      ::onnx::TypeProto::internal_default_instance());
-}
 class ValueInfoProto::_Internal {
  public:
   using HasBits = decltype(std::declval<ValueInfoProto>()._has_bits_);
@@ -1521,12 +1486,12 @@ ValueInfoProto::ValueInfoProto(const ValueInfoProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_name()) {
-    name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArena());
   }
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_doc_string()) {
-    doc_string_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_doc_string(),
+    doc_string_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_doc_string(), 
       GetArena());
   }
   if (from._internal_has_type()) {
@@ -1598,7 +1563,6 @@ void ValueInfoProto::Clear() {
 const char* ValueInfoProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1779,8 +1743,6 @@ std::string ValueInfoProto::GetTypeName() const {
 
 // ===================================================================
 
-void NodeProto::InitAsDefaultInstance() {
-}
 class NodeProto::_Internal {
  public:
   using HasBits = decltype(std::declval<NodeProto>()._has_bits_);
@@ -1816,22 +1778,22 @@ NodeProto::NodeProto(const NodeProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_name()) {
-    name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArena());
   }
   op_type_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_op_type()) {
-    op_type_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_op_type(),
+    op_type_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_op_type(), 
       GetArena());
   }
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_doc_string()) {
-    doc_string_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_doc_string(),
+    doc_string_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_doc_string(), 
       GetArena());
   }
   domain_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_domain()) {
-    domain_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_domain(),
+    domain_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_domain(), 
       GetArena());
   }
   // @@protoc_insertion_point(copy_constructor:onnx.NodeProto)
@@ -1905,7 +1867,6 @@ void NodeProto::Clear() {
 const char* NodeProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -2197,12 +2158,6 @@ std::string NodeProto::GetTypeName() const {
 
 // ===================================================================
 
-void TrainingInfoProto::InitAsDefaultInstance() {
-  ::onnx::_TrainingInfoProto_default_instance_._instance.get_mutable()->initialization_ = const_cast< ::onnx::GraphProto*>(
-      ::onnx::GraphProto::internal_default_instance());
-  ::onnx::_TrainingInfoProto_default_instance_._instance.get_mutable()->algorithm_ = const_cast< ::onnx::GraphProto*>(
-      ::onnx::GraphProto::internal_default_instance());
-}
 class TrainingInfoProto::_Internal {
  public:
   using HasBits = decltype(std::declval<TrainingInfoProto>()._has_bits_);
@@ -2253,8 +2208,9 @@ TrainingInfoProto::TrainingInfoProto(const TrainingInfoProto& from)
 
 void TrainingInfoProto::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TrainingInfoProto_onnx_2eproto.base);
-  ::memset(&initialization_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&algorithm_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&initialization_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&algorithm_) -
       reinterpret_cast<char*>(&initialization_)) + sizeof(algorithm_));
 }
 
@@ -2311,7 +2267,6 @@ void TrainingInfoProto::Clear() {
 const char* TrainingInfoProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -2530,10 +2485,6 @@ std::string TrainingInfoProto::GetTypeName() const {
 
 // ===================================================================
 
-void ModelProto::InitAsDefaultInstance() {
-  ::onnx::_ModelProto_default_instance_._instance.get_mutable()->graph_ = const_cast< ::onnx::GraphProto*>(
-      ::onnx::GraphProto::internal_default_instance());
-}
 class ModelProto::_Internal {
  public:
   using HasBits = decltype(std::declval<ModelProto>()._has_bits_);
@@ -2583,22 +2534,22 @@ ModelProto::ModelProto(const ModelProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   producer_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_producer_name()) {
-    producer_name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_producer_name(),
+    producer_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_producer_name(), 
       GetArena());
   }
   producer_version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_producer_version()) {
-    producer_version_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_producer_version(),
+    producer_version_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_producer_version(), 
       GetArena());
   }
   domain_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_domain()) {
-    domain_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_domain(),
+    domain_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_domain(), 
       GetArena());
   }
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_doc_string()) {
-    doc_string_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_doc_string(),
+    doc_string_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_doc_string(), 
       GetArena());
   }
   if (from._internal_has_graph()) {
@@ -2618,8 +2569,9 @@ void ModelProto::SharedCtor() {
   producer_version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   domain_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&graph_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&model_version_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&graph_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&model_version_) -
       reinterpret_cast<char*>(&graph_)) + sizeof(model_version_));
 }
 
@@ -2693,7 +2645,6 @@ void ModelProto::Clear() {
 const char* ModelProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -3065,8 +3016,6 @@ std::string ModelProto::GetTypeName() const {
 
 // ===================================================================
 
-void StringStringEntryProto::InitAsDefaultInstance() {
-}
 class StringStringEntryProto::_Internal {
  public:
   using HasBits = decltype(std::declval<StringStringEntryProto>()._has_bits_);
@@ -3090,12 +3039,12 @@ StringStringEntryProto::StringStringEntryProto(const StringStringEntryProto& fro
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   key_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_key()) {
-    key_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_key(),
+    key_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_key(), 
       GetArena());
   }
   value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_value()) {
-    value_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_value(),
+    value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_value(), 
       GetArena());
   }
   // @@protoc_insertion_point(copy_constructor:onnx.StringStringEntryProto)
@@ -3156,7 +3105,6 @@ void StringStringEntryProto::Clear() {
 const char* StringStringEntryProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -3311,8 +3259,6 @@ std::string StringStringEntryProto::GetTypeName() const {
 
 // ===================================================================
 
-void TensorAnnotation::InitAsDefaultInstance() {
-}
 class TensorAnnotation::_Internal {
  public:
   using HasBits = decltype(std::declval<TensorAnnotation>()._has_bits_);
@@ -3335,7 +3281,7 @@ TensorAnnotation::TensorAnnotation(const TensorAnnotation& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   tensor_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_tensor_name()) {
-    tensor_name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_tensor_name(),
+    tensor_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_tensor_name(), 
       GetArena());
   }
   // @@protoc_insertion_point(copy_constructor:onnx.TensorAnnotation)
@@ -3390,7 +3336,6 @@ void TensorAnnotation::Clear() {
 const char* TensorAnnotation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -3544,8 +3489,6 @@ std::string TensorAnnotation::GetTypeName() const {
 
 // ===================================================================
 
-void GraphProto::InitAsDefaultInstance() {
-}
 class GraphProto::_Internal {
  public:
   using HasBits = decltype(std::declval<GraphProto>()._has_bits_);
@@ -3583,12 +3526,12 @@ GraphProto::GraphProto(const GraphProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_name()) {
-    name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArena());
   }
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_doc_string()) {
-    doc_string_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_doc_string(),
+    doc_string_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_doc_string(), 
       GetArena());
   }
   // @@protoc_insertion_point(copy_constructor:onnx.GraphProto)
@@ -3656,7 +3599,6 @@ void GraphProto::Clear() {
 const char* GraphProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -4014,8 +3956,6 @@ std::string GraphProto::GetTypeName() const {
 
 // ===================================================================
 
-void TensorProto_Segment::InitAsDefaultInstance() {
-}
 class TensorProto_Segment::_Internal {
  public:
   using HasBits = decltype(std::declval<TensorProto_Segment>()._has_bits_);
@@ -4044,8 +3984,9 @@ TensorProto_Segment::TensorProto_Segment(const TensorProto_Segment& from)
 }
 
 void TensorProto_Segment::SharedCtor() {
-  ::memset(&begin_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&end_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&begin_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&end_) -
       reinterpret_cast<char*>(&begin_)) + sizeof(end_));
 }
 
@@ -4093,7 +4034,6 @@ void TensorProto_Segment::Clear() {
 const char* TensorProto_Segment::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -4253,10 +4193,6 @@ std::string TensorProto_Segment::GetTypeName() const {
 
 // ===================================================================
 
-void TensorProto::InitAsDefaultInstance() {
-  ::onnx::_TensorProto_default_instance_._instance.get_mutable()->segment_ = const_cast< ::onnx::TensorProto_Segment*>(
-      ::onnx::TensorProto_Segment::internal_default_instance());
-}
 class TensorProto::_Internal {
  public:
   using HasBits = decltype(std::declval<TensorProto>()._has_bits_);
@@ -4313,17 +4249,17 @@ TensorProto::TensorProto(const TensorProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_name()) {
-    name_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArena());
   }
   raw_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_raw_data()) {
-    raw_data_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_raw_data(),
+    raw_data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_raw_data(), 
       GetArena());
   }
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_doc_string()) {
-    doc_string_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_doc_string(),
+    doc_string_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_doc_string(), 
       GetArena());
   }
   if (from._internal_has_segment()) {
@@ -4342,8 +4278,9 @@ void TensorProto::SharedCtor() {
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   raw_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   doc_string_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&segment_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&data_location_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&segment_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&data_location_) -
       reinterpret_cast<char*>(&segment_)) + sizeof(data_location_));
 }
 
@@ -4418,7 +4355,6 @@ void TensorProto::Clear() {
 const char* TensorProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -4944,12 +4880,6 @@ std::string TensorProto::GetTypeName() const {
 
 // ===================================================================
 
-void SparseTensorProto::InitAsDefaultInstance() {
-  ::onnx::_SparseTensorProto_default_instance_._instance.get_mutable()->values_ = const_cast< ::onnx::TensorProto*>(
-      ::onnx::TensorProto::internal_default_instance());
-  ::onnx::_SparseTensorProto_default_instance_._instance.get_mutable()->indices_ = const_cast< ::onnx::TensorProto*>(
-      ::onnx::TensorProto::internal_default_instance());
-}
 class SparseTensorProto::_Internal {
  public:
   using HasBits = decltype(std::declval<SparseTensorProto>()._has_bits_);
@@ -4998,8 +4928,9 @@ SparseTensorProto::SparseTensorProto(const SparseTensorProto& from)
 
 void SparseTensorProto::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SparseTensorProto_onnx_2eproto.base);
-  ::memset(&values_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&indices_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&values_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&indices_) -
       reinterpret_cast<char*>(&values_)) + sizeof(indices_));
 }
 
@@ -5055,7 +4986,6 @@ void SparseTensorProto::Clear() {
 const char* SparseTensorProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -5248,8 +5178,6 @@ std::string SparseTensorProto::GetTypeName() const {
 
 // ===================================================================
 
-void TensorShapeProto_Dimension::InitAsDefaultInstance() {
-}
 class TensorShapeProto_Dimension::_Internal {
  public:
   using HasBits = decltype(std::declval<TensorShapeProto_Dimension>()._has_bits_);
@@ -5270,7 +5198,7 @@ TensorShapeProto_Dimension::TensorShapeProto_Dimension(const TensorShapeProto_Di
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   denotation_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_denotation()) {
-    denotation_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_denotation(),
+    denotation_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_denotation(), 
       GetArena());
   }
   clear_has_value();
@@ -5333,7 +5261,7 @@ void TensorShapeProto_Dimension::clear_value() {
       break;
     }
     case kDimParam: {
-      value_.dim_param_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      value_.dim_param_.Destroy(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
       break;
     }
     case VALUE_NOT_SET: {
@@ -5362,7 +5290,6 @@ void TensorShapeProto_Dimension::Clear() {
 const char* TensorShapeProto_Dimension::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -5549,8 +5476,6 @@ std::string TensorShapeProto_Dimension::GetTypeName() const {
 
 // ===================================================================
 
-void TensorShapeProto::InitAsDefaultInstance() {
-}
 class TensorShapeProto::_Internal {
  public:
 };
@@ -5610,7 +5535,6 @@ void TensorShapeProto::Clear() {
 
 const char* TensorShapeProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -5735,10 +5659,6 @@ std::string TensorShapeProto::GetTypeName() const {
 
 // ===================================================================
 
-void TypeProto_Tensor::InitAsDefaultInstance() {
-  ::onnx::_TypeProto_Tensor_default_instance_._instance.get_mutable()->shape_ = const_cast< ::onnx::TensorShapeProto*>(
-      ::onnx::TensorShapeProto::internal_default_instance());
-}
 class TypeProto_Tensor::_Internal {
  public:
   using HasBits = decltype(std::declval<TypeProto_Tensor>()._has_bits_);
@@ -5776,8 +5696,9 @@ TypeProto_Tensor::TypeProto_Tensor(const TypeProto_Tensor& from)
 
 void TypeProto_Tensor::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TypeProto_Tensor_onnx_2eproto.base);
-  ::memset(&shape_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&elem_type_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&shape_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&elem_type_) -
       reinterpret_cast<char*>(&shape_)) + sizeof(elem_type_));
 }
 
@@ -5826,7 +5747,6 @@ void TypeProto_Tensor::Clear() {
 const char* TypeProto_Tensor::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -5987,10 +5907,6 @@ std::string TypeProto_Tensor::GetTypeName() const {
 
 // ===================================================================
 
-void TypeProto_Sequence::InitAsDefaultInstance() {
-  ::onnx::_TypeProto_Sequence_default_instance_._instance.get_mutable()->elem_type_ = const_cast< ::onnx::TypeProto*>(
-      ::onnx::TypeProto::internal_default_instance());
-}
 class TypeProto_Sequence::_Internal {
  public:
   using HasBits = decltype(std::declval<TypeProto_Sequence>()._has_bits_);
@@ -6071,7 +5987,6 @@ void TypeProto_Sequence::Clear() {
 const char* TypeProto_Sequence::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -6197,10 +6112,6 @@ std::string TypeProto_Sequence::GetTypeName() const {
 
 // ===================================================================
 
-void TypeProto_Map::InitAsDefaultInstance() {
-  ::onnx::_TypeProto_Map_default_instance_._instance.get_mutable()->value_type_ = const_cast< ::onnx::TypeProto*>(
-      ::onnx::TypeProto::internal_default_instance());
-}
 class TypeProto_Map::_Internal {
  public:
   using HasBits = decltype(std::declval<TypeProto_Map>()._has_bits_);
@@ -6238,8 +6149,9 @@ TypeProto_Map::TypeProto_Map(const TypeProto_Map& from)
 
 void TypeProto_Map::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TypeProto_onnx_2eproto.base);
-  ::memset(&value_type_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&key_type_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&value_type_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&key_type_) -
       reinterpret_cast<char*>(&value_type_)) + sizeof(key_type_));
 }
 
@@ -6288,7 +6200,6 @@ void TypeProto_Map::Clear() {
 const char* TypeProto_Map::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -6449,8 +6360,6 @@ std::string TypeProto_Map::GetTypeName() const {
 
 // ===================================================================
 
-void TypeProto::InitAsDefaultInstance() {
-}
 class TypeProto::_Internal {
  public:
   using HasBits = decltype(std::declval<TypeProto>()._has_bits_);
@@ -6531,7 +6440,7 @@ TypeProto::TypeProto(const TypeProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   denotation_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_denotation()) {
-    denotation_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_denotation(),
+    denotation_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_denotation(), 
       GetArena());
   }
   clear_has_value();
@@ -6637,7 +6546,6 @@ void TypeProto::Clear() {
 const char* TypeProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -6852,8 +6760,6 @@ std::string TypeProto::GetTypeName() const {
 
 // ===================================================================
 
-void OperatorSetIdProto::InitAsDefaultInstance() {
-}
 class OperatorSetIdProto::_Internal {
  public:
   using HasBits = decltype(std::declval<OperatorSetIdProto>()._has_bits_);
@@ -6877,7 +6783,7 @@ OperatorSetIdProto::OperatorSetIdProto(const OperatorSetIdProto& from)
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   domain_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_domain()) {
-    domain_.SetLite(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_domain(),
+    domain_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_domain(), 
       GetArena());
   }
   version_ = from.version_;
@@ -6934,7 +6840,6 @@ void OperatorSetIdProto::Clear() {
 const char* OperatorSetIdProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);

@@ -103,7 +103,9 @@ add_executable(benchmark
 target_link_directories(benchmark PUBLIC /usr/local/lib)
 target_link_libraries(benchmark -lprotobuf)
 target_link_libraries(benchmark -ldnnl)
-target_link_libraries(benchmark -lprofiler)
 target_link_libraries(benchmark "${TORCH_LIBRARIES}")
+
+
+
 
 

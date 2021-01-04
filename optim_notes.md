@@ -13,4 +13,13 @@ Optimization Notes
 3. In-place
     - BN
     
+4. Conv algo
+    - Winograd 
+        - fast for small filters
+    - FFT
+        - fast for large filters
+    - Strassen’s algorithm
+        - O( N³) to O( N².807)
+        - less numerical stability
+    
     

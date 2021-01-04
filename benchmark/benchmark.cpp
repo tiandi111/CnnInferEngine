@@ -13,12 +13,12 @@
 using namespace std;
 
 void bench::CifarResNetInfer() {
-    float N = 1000;
+    float N = 1;
     // load dataset
     cifar::CifarLoader cf( "/Users/tiandi03/Desktop/dataset/cifar-10-batches-bin");
     cf.LoadTest(N);
     // load model
-    ifstream in("/Users/tiandi03/road-to-dl/Project636/model/res_cifar_1606001241.onnx", ios_base::binary);
+    ifstream in("../resource/model/res_cifar_1606001241.onnx", ios_base::binary);
     auto g = load::LoadOnnx(&in);
     g.Fuse();
     // init engine
