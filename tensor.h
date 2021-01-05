@@ -6,6 +6,7 @@
 #define SERVER_TENSOR_H
 
 #include <vector>
+#include <cstdint>
 
 using namespace std;
 
