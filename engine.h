@@ -5,7 +5,7 @@
 #ifndef SERVER_ENGINE_H
 #define SERVER_ENGINE_H
 
-#include "dnnl.hpp"
+#include "include/dnnl.hpp"
 #include "graph.h"
 #include "mkl.h"
 #include "context.h"

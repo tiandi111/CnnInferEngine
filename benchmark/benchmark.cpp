@@ -14,7 +14,7 @@ using namespace std;
 
 void bench::CifarResNetInfer() {
     float N = 1;
-    // load dataset
+    // load dataseta
     cifar::CifarLoader cf( "/Users/tiandi03/Desktop/dataset/cifar-10-batches-bin");
     cf.LoadTest(N);
     // load model

@@ -1,40 +1,18 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.10)
 project(server)
 
 set(CMAKE_CXX_COMPILER /usr/bin/g++)
 set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_PREFIX_PATH /Users/tiandi03/OpenSource/libtorch)
 
-include_directories(.
-        /usr/local/include)
+include_directories(. /usr/local/include)
+link_directories(/usr/local/lib)
 
-add_executable(server
-    engine.cpp
-    engine.h
-    graph.cpp
-    graph.h
-    context.cpp
-    context.h
-    loader.cpp
-    loader.h
-    mkl.cpp
-    mkl.h
-    node.cpp
-    node.h
-    onnx.pb.cc
-    onnx.pb.h
-    tensor.cpp
-    tensor.h
-    utils.h
-    utils.cpp
-    main.cpp)
+find_package(Protobuf REQUIRED)
+include_directories(${Protobuf_INCLUDE_DIRS})
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
-target_link_directories(server PUBLIC /usr/local/lib)
-target_link_libraries(server -lprotobuf)
-target_link_libraries(server -ldnnl)
-
-
-add_executable(test
+add_executable(tests
         test/main.cpp
         test/test.h
         test/util_test.h
@@ -68,13 +46,13 @@ add_executable(test
         utils/dataset/cifar.h
         utils/dataset/cifar.cpp)
 
-target_link_directories(test PUBLIC /usr/local/lib)
-target_link_libraries(test -lprotobuf)
-target_link_libraries(test -ldnnl)
+target_link_libraries(tests ${Protobuf_LIBRARIES})
+target_link_libraries(tests -ldnnl)
 
 
 find_package(Torch REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
+
 add_executable(benchmark
         benchmark/benchmark.cpp
         benchmark/benchmark.h
@@ -98,12 +76,13 @@ add_executable(benchmark
         utils.h
         utils.cpp
         utils/dataset/cifar.h
-        utils/dataset/cifar.cpp)
+        utils/dataset/cifar.cpp
+        ${PROTO_SRCS}
+        ${PROTO_HDRS})
 
-target_link_directories(benchmark PUBLIC /usr/local/lib)
-target_link_libraries(benchmark -lprotobuf)
+target_link_libraries(benchmark ${Protobuf_LIBRARIES})
 target_link_libraries(benchmark -ldnnl)
-target_link_libraries(benchmark "${TORCH_LIBRARIES}")
+target_link_libraries(benchmark ${TORCH_LIBRARIES})
 
 
 
