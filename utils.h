@@ -5,7 +5,7 @@
 #ifndef SERVER_HELPER_H
 #define SERVER_HELPER_H
 
-#include "include/dnnl.hpp"
+#include "include/dnnl/dnnl.hpp"
 #include "string"
 #include <vector>
 

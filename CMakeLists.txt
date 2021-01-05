@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
 project(server)
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_COMPILER /usr/bin/g++)
-set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_PREFIX_PATH /Users/tiandi03/OpenSource/libtorch)
 
-include_directories(. /usr/local/include)
+include_directories(.)
 link_directories(/usr/local/lib)
 
 find_package(Protobuf REQUIRED)

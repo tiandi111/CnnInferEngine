@@ -5,7 +5,7 @@
 #ifndef SERVER_MKL_H
 #define SERVER_MKL_H
 
-#include "include/dnnl.hpp"
+#include "include/dnnl/dnnl.hpp"
 #include "tensor.h"
 #include <vector>
 #include <stdexcept>
